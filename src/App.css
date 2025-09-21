@@ -1,0 +1,96 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff; /* full white background */
+  color: #111827;
+}
+
+/* Center wrapper */
+.todo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  background: #ffffff; /* white wrapper */
+}
+
+/* Main container (card) */
+.todo-container {
+  width: 100%;
+  max-width: 480px;
+  padding: 2rem;
+  background: #ffffff; /* white card */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* very soft shadow */
+  border: 1px solid #e5e7eb;
+}
+
+/* Form styling */
+.todo-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.todo-form input[type='text'] {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  background: #ffffff; /* pure white input */
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #111827;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.todo-form input[type='text']::placeholder {
+  color: #9ca3af;
+}
+
+.todo-form input[type='text']:focus {
+  border-color: #38bdf8;
+}
+
+.todo-form button {
+  background: #38bdf8;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.todo-form button:hover {
+  background: #0ea5e9;
+}
+
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  background: #ffffff; 
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  color: #111827;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  transition: background 0.2s ease;
+}
+
+.todo-list li:hover {
+  background: #f9fafb; /* very light hover */
+}
